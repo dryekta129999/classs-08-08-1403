@@ -1,0 +1,28 @@
+  {% extends '__base.jinja' %}
+
+
+   {% block title %}
+   	نمایش پستها
+   {% endblock %}
+   
+  {% block content %}
+      <h1 class="display-۳">به صفحه نمایش پستها خوش آمدید</h1>
+      
+      {% for post in posts %}
+      	
+      
+      
+      <div class="card shadow-sm my-3">
+                <div class="card-body">
+                    <h5 class="card-title">{{ post.title }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted small py-2">2 Sep 2021</h6>
+                    <p class="card-text py-3">
+                        {{ post.content }}
+                    </p>
+                    <div class="btn btn-sm btn-success">Read More</div>
+                </div>
+            </div>
+      
+      {% endfor %}
+  {% endblock %}
+   
