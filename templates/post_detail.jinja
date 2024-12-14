@@ -6,7 +6,13 @@
 
 
 {% block content %}
-	  <div class="card shadow my-3 p-5">
+	 <div class="card shadow my-3 p-5">
+                <h1>{{ post.title }}</h1>
+                <p class="small text-muted mt-2">{{ post.auther }}</p>
+                <p class="mt-2">{{ post.information }}</p>
+            </div>
+        
+            <div class="card shadow my-3 p-5">']
                 <h3>Comments:</h3>
                     No comments yet! Be the first one.
             </div>

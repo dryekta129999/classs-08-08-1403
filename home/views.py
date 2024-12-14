@@ -25,8 +25,8 @@ def show_post(request):
 
 
 
-def show_detail_post(request, id):
+def show_post_detail(request,id):
     post = Post.objects.get(id=id)
     context = {'post': post}
-    return jinja_render('details.jinja', context)
+    return jinja_render('post_detail.jinja', context)
 

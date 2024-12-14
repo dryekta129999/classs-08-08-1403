@@ -11,6 +11,7 @@ class Post(models.Model):
 	)
 
 	title = models.CharField(max_length=100,null=False)
+	auther = models.CharField(max_length=100,null=True,blank=True)
 	content = models.TextField(max_length=1000,null=True,blank=True)
 	created_date = models.DateTimeField(auto_now_add=True)
 	updated_date = models.DateTimeField(auto_now=True)
